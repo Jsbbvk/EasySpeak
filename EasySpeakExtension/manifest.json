@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "EasySpeak",
+  "description": "This extension will ",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"  
+   ],
+    "background": [
+        {
+            "scripts": ["background.js"]
+        }
+    ],
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+              ],
+            "js": ["jquery-3.3.1.min.js", "content.js"]
+        }
+    ]
+    
+    
+
+}

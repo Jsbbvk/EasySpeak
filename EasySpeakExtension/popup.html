@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>EasySpeak</title>
+    <script src="popup.js"></script>
+      <style>
+          .round {
+                width: 100px;
+              height: 100px;
+              margin: auto;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: cornflowerblue;
+                border: 2px solid #0b31c6;
+            }
+          
+          .round img {
+                
+                width: 50px;
+                height: 50px;
+          }
+      </style>
+  </head>
+  <body>
+      <div style="width: 400px; height: 550px; background-color: darkorange; align-content: center">
+          
+              <div style="width: 400px; height: 50px;">
+                  <p>
+                      <img src="icon.png" width="25px" height="25px" style="float: left; position: absolute; left: 65%; top: 5%">
+                      <h1 style="position: absolute; left: 35%">EasySpeak</h1>
+          
+                  </p>
+          </div><br>
+          
+          <center>
+            <button id="start_button" class="round">
+                <img id="start_img" src="Res/mic.gif" alt="Start" ></button></center>
+          
+          <br><br>
+          <center><img src="Res/display_button.png" id="displayButton" style="width=250px;"></center>
+            <h3 style="padding-left: 40px; width: 250px;" id="speechDisplayer">Text displayed here</h3>
+      
+            <img id="clearButton" src="Res/clearButton.png" style="width100px; bottom: 20px; position: absolute; left: 135px">
+      </div>
+          
+  </body>
+</html>
